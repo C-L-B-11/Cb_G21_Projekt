@@ -20,7 +20,7 @@ LBRC:   '{';
 RBRC:   '}';
 
 STRING:  ["]~["]*["];
-NUMBER: [0-9]+(.[0-9]+)?;
+NUMBER: [0-9]+('.'[0-9]+)?;
 
 IDENTIFIER: [A-Za-z][A-Za-z0-9]*;
 

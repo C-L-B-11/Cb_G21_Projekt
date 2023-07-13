@@ -15,7 +15,7 @@ public interface SPLGrammarVisitor<T> extends ParseTreeVisitor<T> {
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitProgram(SPLGrammarParser.ProgramContext ctx);
+	T visitProgram(SPLGrammarParser.ProgramContext ctx) throws Exception;
 	/**
 	 * Visit a parse tree produced by {@link SPLGrammarParser#declaration}.
 	 * @param ctx the parse tree

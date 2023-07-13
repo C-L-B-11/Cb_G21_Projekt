@@ -127,7 +127,13 @@ public class SPLGrammarParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof SPLGrammarVisitor ) return ((SPLGrammarVisitor<? extends T>)visitor).visitProgram(this);
+			if ( visitor instanceof SPLGrammarVisitor ) {
+				try {
+					return ((SPLGrammarVisitor<? extends T>)visitor).visitProgram(this);
+				} catch (Exception e) {
+					throw new RuntimeException(e);
+				}
+			}
 			else return visitor.visitChildren(this);
 		}
 	}
