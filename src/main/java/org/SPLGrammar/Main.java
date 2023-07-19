@@ -11,7 +11,7 @@ import java.nio.file.Path;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        String relativePath = "src/main/java/org/SPLGrammar/Tests/sample.spl";               //Pfad Generieren
+        String relativePath = "src/main/java/org/SPLGrammar/Tests/sample.spl";               //Pfad Generieren test
         String currentDirectory = System.getProperty("user.dir");
         String absoluteFilePath = currentDirectory + "/" + relativePath;
         File file = new File(absoluteFilePath);
