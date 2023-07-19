@@ -1,6 +1,21 @@
 
-var a = true;
-var b = !a;
+var a = 10;
+while(a>0)
+{
+    if(a>5)
+    {
+        a=a-2;
+    }
+    else
+    {
+        a=a-1;
+    }
+    print a;
+}
+print a;
+
+
+
 
 
 
