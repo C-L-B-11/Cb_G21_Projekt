@@ -21,7 +21,7 @@ public class Main {
             CommonTokenStream tokens = new CommonTokenStream(lexer);
             SPLGrammarParser parser = new SPLGrammarParser(tokens);                         //parser
 
-            SPLGrammarParser.ProgramContext tree = parser.program();                                              //Syntaxbaum
+            SPLGrammarParser.ProgramContext tree = parser.program();                        //Syntaxbaum
             SPLGrammarVisitor visitor = new SPLGrammarBaseVisitor();                        //Semantische analyse
             try {
                 visitor.visitProgram(tree);
@@ -37,7 +37,7 @@ public class Main {
         }
         else
         {
-            System.out.print("Can't find the file in ");
+            System.out.print("Can't find the file in ");                                    //Fehler abfangen
             System.out.println(absoluteFilePath);
         }
     }
