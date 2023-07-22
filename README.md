@@ -14,3 +14,8 @@ Um unsere Lösung zu testen, wird am besten wie folgt vorgegangen:
     2. In der Main-Datei in Zeile 14 die rechte Seite des Assignments anpassen, indem sample.spl durch XYZ.spl ersetzt wird.
 
     3. Main-Datei ausführen.
+    
+Mitgearbeitet haben: 
+    Caius Blumenthal, blumenca
+    Glenn Grubert, grubertg
+    Julius Schurig, schurigj
